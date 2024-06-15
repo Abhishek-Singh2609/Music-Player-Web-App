@@ -24,7 +24,8 @@ Volume: Adjust the volume using the volume slider or mute/unmute by clicking the
 index.html: Main HTML file containing the structure of the app.
 style.css: CSS file for styling the app.
 script.js: JavaScript file for handling the app's functionality.
-# /songs: Directory containing albums, each with an info.json file for metadata and cover.jpg for the album cover. The songs are stored as audio files in each album's folder.
+# songs:
+ Directory containing albums, each with an info.json file for metadata and cover.jpg for the album cover. The songs are stored as audio files in each album's folder.
 Metadata Format
 Each album should contain an info.json file with the following structure:
 
