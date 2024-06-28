@@ -37,7 +37,7 @@ const playmusic = (track, pause = false) => {
 
 const loadSongs = async (folder, playFirstSong = true) => {
   console.log(`Loading songs from folder: ${folder}`);
-  let response = await fetch(`http://127.0.0.1:3000/songs/${folder}`);
+  let response = await fetch(`http://127.0.0.1:5500/songs/${folder}`);
   let htmlContent = await response.text();
 
   let tempElement = document.createElement("div");
