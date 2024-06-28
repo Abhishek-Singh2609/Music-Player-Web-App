@@ -246,9 +246,11 @@ async function main() {
     if (e.target.src.includes("volume.svg")) {
       e.target.src = e.target.src.replace("volume.svg", "mute.svg");
       document.querySelector(".range input").value = 0;
+      currentSong.volume = 0;
     } else {
       e.target.src = e.target.src.replace("mute.svg", "volume.svg");
       document.querySelector(".range input").value = 10;
+      currentSong.volume = 1;
     }
   });
 }
